@@ -2,7 +2,7 @@
 
 一个面向产品研发全流程的 Git 种子项目。
 
-它的目标不是“更快地产生代码”，而是把 `OpenClaw + Codex` 组织成一套可以长期复用、持续演进的研发操作系统，让需求进入、规格澄清、计划制定、任务拆解、实现验证、发布复盘都留在同一个仓库里。
+它的目标不是“更快地产生代码”，而是把 `OpenClaw + Codex` 组织成一套符合敏捷价值观、吸收 XP 习惯、并用 SDD 管理交付证据的研发操作系统。
 
 ## 语言规则
 
@@ -27,14 +27,15 @@
 
 ```mermaid
 flowchart LR
-    A["OpenClaw 接收原始需求"] --> B["需求简报\n归一化问题、用户、目标、约束"]
-    B --> C["原则检查\n检查是否违反项目原则"]
-    C --> D["功能规格\n定义范围、场景、验收标准"]
-    D --> E["实现计划\n设计方案、风险、验证策略"]
-    E --> F["任务拆解\n拆成可独立验证的小任务"]
-    F --> G["Codex 执行\n小批次实现 + 测试 + 文档"]
-    G --> H["发布检查清单\n确认发布与回滚条件"]
-    H --> I["迭代复盘\n复盘并回流到模板或原则"]
+    A["发现一个值得推进的切片"] --> B["brief\n只澄清当前问题"]
+    B --> C["spec\n只写当前切片验收"]
+    C --> D["plan\n只写当前切片设计"]
+    D --> E["tasks\n只拆当前批次任务"]
+    E --> F["实现 + 测试 + 验证"]
+    F --> G{"达到当前切片验收了吗？"}
+    G -- "没有" --> H["更新理解\n补最少必要工件"]
+    H --> D
+    G -- "达到了" --> I["发布 / 复盘 / 进入下一切片"]
 ```
 
 ## 仓库结构
@@ -79,6 +80,8 @@ make new-feature SLUG=improve-onboarding
 - `specs/features/improve-onboarding/plan.md`
 - `specs/features/improve-onboarding/tasks.md`
 
+这些工件只服务于当前切片，不要求一次覆盖整个主题。
+
 ### 3. 本地校验
 
 ```bash
@@ -101,7 +104,7 @@ make validate-specs
 - 语言策略：[docs/language-policy.md](docs/language-policy.md)
 - 术语表：[docs/glossary.md](docs/glossary.md)
 - 项目原则：[specs/constitution.md](specs/constitution.md)
-- 端到端示例：[examples/onboarding-improvement/brief.md](examples/onboarding-improvement/brief.md)
+- 迭代式示例：[examples/onboarding-improvement/README.md](examples/onboarding-improvement/README.md)
 
 ## 图片规则
 
