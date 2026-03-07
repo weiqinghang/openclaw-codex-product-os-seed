@@ -1,0 +1,12 @@
+default_route = "clarify"
+project_issue_required_for_execution = true
+route_when_design_missing = "clarify"
+route_when_scope_is_multi_goal = "clarify"
+route_when_gateway_triggered = "human_approval"
+
+[request_type_to_route]
+project_idea = "github_project_issue"
+slice_request = "codex_task_packet"
+design_review = "human_approval"
+acceptance = "human_approval"
+release = "human_approval"

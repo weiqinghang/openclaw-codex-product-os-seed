@@ -1,0 +1,14 @@
+id = "oc-feishu-router"
+name = "Feishu Router"
+version = "0.1.0"
+category = "integration"
+summary = "Normalize Feishu requests before routing them to clarification, GitHub intake, approval, or Codex execution."
+recommended_layer = "extension"
+status = "draft"
+
+[compat]
+requires_openclaw_source_changes = false
+requires_codex_source_changes = false
+
+[ownership]
+backlog_id = "OC-007"

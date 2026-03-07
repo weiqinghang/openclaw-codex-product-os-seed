@@ -1,0 +1,14 @@
+id = "oc-approval-store"
+name = "Approval Store"
+version = "0.1.0"
+category = "state"
+summary = "Persist approval stage, gateway node, last human decision, and linked artifacts for OpenClaw flows."
+recommended_layer = "extension"
+status = "draft"
+
+[compat]
+requires_openclaw_source_changes = false
+requires_codex_source_changes = false
+
+[ownership]
+backlog_id = "OC-013"

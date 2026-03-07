@@ -1,0 +1,14 @@
+id = "oc-context-pruner"
+name = "Context Pruner"
+version = "0.1.0"
+category = "orchestration"
+summary = "Prune OpenClaw-to-Codex context into a single-goal packet with minimal required inputs."
+recommended_layer = "extension"
+status = "draft"
+
+[compat]
+requires_openclaw_source_changes = false
+requires_codex_source_changes = false
+
+[ownership]
+backlog_id = "OC-010"

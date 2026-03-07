@@ -1,0 +1,11 @@
+initial_state = "collecting_context"
+auto_continue_classes = ["可自动继续"]
+blocking_classes = ["需人类 review", "需人类决策", "需补充输入"]
+
+[gateway_to_state]
+project_startup_approval = "awaiting_human_decision"
+version_boundary_approval = "awaiting_human_decision"
+design_signoff_approval = "awaiting_human_review"
+first_slice_approval = "awaiting_human_review"
+acceptance_approval = "awaiting_human_review"
+release_approval = "awaiting_human_decision"

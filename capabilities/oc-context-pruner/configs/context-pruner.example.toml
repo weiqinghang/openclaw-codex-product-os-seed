@@ -1,0 +1,17 @@
+max_context_items = 6
+allow_history_summary = true
+history_summary_max_lines = 5
+drop_future_scope = true
+
+[required_artifacts_by_stage]
+slice_definition = ["brief"]
+technical_design = ["brief", "spec"]
+implementation = ["brief", "spec", "plan", "tasks"]
+validation = ["spec", "plan", "tasks"]
+release_preparation = ["spec", "plan", "validation_evidence"]
+
+[escalate_when_missing]
+goal = true
+acceptance_criteria = true
+code_scope = true
+design_link_if_design_dependent = true

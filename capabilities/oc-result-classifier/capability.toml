@@ -1,0 +1,14 @@
+id = "oc-result-classifier"
+name = "Result Classifier"
+version = "0.1.0"
+category = "orchestration"
+summary = "Classify Codex results into auto-continue, human review, human decision, or missing-input outcomes."
+recommended_layer = "extension"
+status = "draft"
+
+[compat]
+requires_openclaw_source_changes = false
+requires_codex_source_changes = false
+
+[ownership]
+backlog_id = "OC-011"

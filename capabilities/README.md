@@ -23,4 +23,10 @@
 
 ## 当前状态
 
-当前仓库已经定义了能力包规范，但尚未开始沉淀具体能力包实现。
+当前仓库已开始沉淀具体能力包实现。
+
+- `oc-feishu-router`：先在飞书入口收敛请求，再决定沉淀 GitHub 还是转交 `Codex`
+- `oc-context-pruner`：在 `OpenClaw -> Codex` 交接前裁剪上下文，只保留当前阶段、当前目标和最小必要输入。
+- `oc-result-classifier`：把 `Codex` 返回结果归类成可继续、需 review、需决策、需补充输入
+- `oc-approval-store`：持久化阶段、审批节点、最后决定和关联工件
+- `oc-approval-state-machine`：把审批网关规则收敛成可执行状态机

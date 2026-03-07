@@ -1,0 +1,13 @@
+storage_backend = "file"
+project_key_field = "project_id"
+slice_key_field = "slice_id"
+retain_history_entries = 50
+block_execution_when_status_in = ["awaiting_human_review", "awaiting_human_decision", "awaiting_input"]
+
+[required_fields]
+project_id = true
+current_stage = true
+current_gateway = true
+current_status = true
+last_decision = true
+linked_artifacts = true

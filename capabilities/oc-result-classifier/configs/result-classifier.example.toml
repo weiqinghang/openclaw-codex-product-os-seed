@@ -1,0 +1,5 @@
+default_class = "needs_human_review"
+classify_as_review_when_artifact_changed = true
+classify_as_decision_when_scope_changes = true
+classify_as_input_needed_when_missing_dependencies = true
+classify_as_auto_continue_when_all_checks_pass = true

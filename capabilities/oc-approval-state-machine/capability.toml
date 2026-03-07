@@ -1,0 +1,14 @@
+id = "oc-approval-state-machine"
+name = "Approval State Machine"
+version = "0.1.0"
+category = "orchestration"
+summary = "Map approval gateways into explicit states and transitions for OpenClaw execution flow."
+recommended_layer = "extension"
+status = "draft"
+
+[compat]
+requires_openclaw_source_changes = false
+requires_codex_source_changes = false
+
+[ownership]
+backlog_id = "OC-018"

@@ -36,18 +36,18 @@
 | OC-004 | `OpenClaw -> Codex` 任务包 | 用固定模板下发阶段、目标、上下文边界、预期产出和升级条件。 | 无源码 | 待定 | done |
 | OC-005 | `OpenClaw -> 人类` 决策摘要 | 在需要人类 review 或拍板时，统一输出结构化决策摘要。 | 无源码 | 待定 | done |
 | OC-006 | 审批网关模型 | 定义哪些节点允许自动推进，哪些节点必须停下来找人类。 | 无源码 | 待定 | done |
-| OC-007 | 飞书消息路由 | 让飞书中的请求先经过 `OpenClaw` 收敛，再决定是否进入 GitHub 或调用 `Codex`。 | 扩展层 | `oc-feishu-router` | todo |
+| OC-007 | 飞书消息路由 | 让飞书中的请求先经过 `OpenClaw` 收敛，再决定是否进入 GitHub 或调用 `Codex`。 | 扩展层 | `oc-feishu-router` | done |
 | OC-008 | GitHub 项目级 issue 自动投递 | 将已确认的项目启动结论自动沉淀为 GitHub 项目级 issue。 | 扩展层 | `oc-github-project-issue-sync` | todo |
 | OC-009 | Figma 链接回写与引用 | 让项目级和切片级工件稳定引用 Figma 作为设计定版来源。 | 扩展层 | `oc-figma-link-sync` | todo |
-| OC-010 | 上下文裁剪器 | 在调用 `Codex` 前自动收敛并裁剪上下文，避免整包历史对话下发。 | 扩展层 | `oc-context-pruner` | todo |
-| OC-011 | 结果分类器 | 把 `Codex` 的结果自动分类为“可继续 / 需 review / 需决策 / 需补充输入”。 | 扩展层 | `oc-result-classifier` | todo |
+| OC-010 | 上下文裁剪器 | 在调用 `Codex` 前自动收敛并裁剪上下文，避免整包历史对话下发。 | 扩展层 | `oc-context-pruner` | done |
+| OC-011 | 结果分类器 | 把 `Codex` 的结果自动分类为“可继续 / 需 review / 需决策 / 需补充输入”。 | 扩展层 | `oc-result-classifier` | done |
 | OC-012 | 阶段识别器 | 判断当前请求属于项目收敛、切片定义、实现、验证还是发布准备。 | 扩展层 | `oc-stage-detector` | todo |
-| OC-013 | 审批状态存储 | 持久化记录当前阶段、当前审批节点、上一次人类决定和关联工件。 | 扩展层 | `oc-approval-store` | todo |
+| OC-013 | 审批状态存储 | 持久化记录当前阶段、当前审批节点、上一次人类决定和关联工件。 | 扩展层 | `oc-approval-store` | done |
 | OC-014 | 工具调用路由 | 控制哪些请求只由 `OpenClaw` 处理，哪些请求应转交 `Codex`。 | 扩展层 | `oc-tool-router` | todo |
 | OC-015 | 风险升级器 | 当范围、周期、设计冲突或发布风险超阈值时，强制拉人类介入。 | 扩展层 | `oc-risk-escalator` | todo |
 | OC-016 | 飞书审批卡片 | 用更适合人类拍板的方式展示决策摘要和可选项。 | 扩展层 | `oc-feishu-approval-card` | todo |
 | OC-017 | 任务包输入输出 schema | 为 `OpenClaw -> Codex` 的任务包和回传结果定义稳定 schema。 | 扩展层 | `oc-task-packet-schema` | todo |
-| OC-018 | 审批网关状态机实现 | 把当前文档化的网关模型映射成实际可运行的状态机。 | 扩展层 | `oc-approval-state-machine` | todo |
+| OC-018 | 审批网关状态机实现 | 把当前文档化的网关模型映射成实际可运行的状态机。 | 扩展层 | `oc-approval-state-machine` | done |
 | OC-019 | 调用链拦截 hook | 如果现有扩展点不足，增加对 `OpenClaw -> 工具 / Codex` 调用的拦截能力。 | 可能源码 | `oc-call-intercept-hook` | todo |
 | OC-020 | 原生状态持久化支持 | 如果外部状态存储无法可靠挂接，考虑增加内建状态持久化。 | 可能源码 | `oc-native-state-store` | todo |
 | OC-021 | 原生审批 UI | 如果飞书或外围层无法承载审批体验，再考虑在 `OpenClaw` 内建审批界面。 | 可能源码 | `oc-native-approval-ui` | todo |
@@ -55,7 +55,7 @@
 
 ## 当前优先级
 
-当前建议优先推进的条目：
+当前这一批已完成：
 
 1. `OC-007` 飞书消息路由
 2. `OC-010` 上下文裁剪器
@@ -63,11 +63,19 @@
 4. `OC-013` 审批状态存储
 5. `OC-018` 审批网关状态机实现
 
-原因是这几项决定了：
+它们共同补齐了：
 
 - `OpenClaw` 能否真正稳定扮演前台编排者
 - `Codex` 能否只接收边界清楚的执行任务
 - 人类能否只在关键节点介入，而不是被执行细节淹没
+
+下一批建议优先推进的条目：
+
+1. `OC-008` GitHub 项目级 issue 自动投递
+2. `OC-009` Figma 链接回写与引用
+3. `OC-012` 阶段识别器
+4. `OC-014` 工具调用路由
+5. `OC-016` 飞书审批卡片
 
 ## 维护说明
 

@@ -1,0 +1,24 @@
+{
+  "project_id": "onboarding-improvement",
+  "slice_id": "slice-2-persist",
+  "session_id": "feishu-thread-001",
+  "current_stage": "validation",
+  "current_gateway": "acceptance_approval",
+  "current_status": "awaiting_human_review",
+  "block_reason": "validation_summary_ready",
+  "last_decision": {
+    "type": "approved",
+    "timestamp": "2026-03-08T10:30:00+08:00",
+    "actor": "human",
+    "summary": "confirmed first slice can continue"
+  },
+  "linked_artifacts": [
+    "examples/onboarding-improvement/slice-2-persist/spec.md",
+    "examples/onboarding-improvement/slice-2-persist/plan.md"
+  ],
+  "evidence": [
+    "test results",
+    "validation summary"
+  ],
+  "risk_summary": "known limitation accepted"
+}
