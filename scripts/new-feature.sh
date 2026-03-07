@@ -8,9 +8,22 @@ if [[ $# -ne 1 ]]; then
 fi
 
 slug="$1"
+raw_lang="${FEATURE_LANG:-${LANG:-}}"
+template_lang="cn"
 
 if [[ ! "$slug" =~ ^[a-z0-9]+(-[a-z0-9]+)*$ ]]; then
   echo "Feature slug must be lowercase kebab-case."
+  exit 1
+fi
+
+if [[ "$raw_lang" == "cn" || "$raw_lang" == "en" ]]; then
+  template_lang="$raw_lang"
+elif [[ -n "$raw_lang" ]]; then
+  template_lang="cn"
+fi
+
+if [[ "$template_lang" != "cn" && "$template_lang" != "en" ]]; then
+  echo "LANG must be either 'cn' or 'en'."
   exit 1
 fi
 
@@ -24,16 +37,17 @@ fi
 mkdir -p "$feature_dir"
 mkdir -p "specs/releases"
 
-cp "templates/feature-brief.md" "$feature_dir/brief.md"
-cp "templates/feature-spec.md" "$feature_dir/spec.md"
-cp "templates/implementation-plan.md" "$feature_dir/plan.md"
-cp "templates/task-breakdown.md" "$feature_dir/tasks.md"
+cp "templates/feature-brief.$template_lang.md" "$feature_dir/brief.md"
+cp "templates/feature-spec.$template_lang.md" "$feature_dir/spec.md"
+cp "templates/implementation-plan.$template_lang.md" "$feature_dir/plan.md"
+cp "templates/task-breakdown.$template_lang.md" "$feature_dir/tasks.md"
 
 echo "Created feature workspace:"
 echo "  $feature_dir/brief.md"
 echo "  $feature_dir/spec.md"
 echo "  $feature_dir/plan.md"
 echo "  $feature_dir/tasks.md"
+echo "Language: $template_lang"
 echo
 echo "Next:"
 echo "  1. Fill in brief.md from the incoming request."

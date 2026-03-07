@@ -10,16 +10,15 @@
 
 ## 1. Problem
 
-What problem exists today? Why does it matter now?
+说明当前存在什么问题，以及为什么现在值得解决。
 
 ## 2. Users and Context
 
-Who is affected?
-In what workflow or scenario does this happen?
+说明谁受影响，以及问题出现在哪个工作流里。
 
 ## 3. Desired Outcome
 
-What should be true after this feature ships?
+说明交付后应达到的结果。
 
 ## 4. Scope
 
@@ -37,7 +36,7 @@ What should be true after this feature ships?
 2. I want to ...
 3. So that ...
 
-Add the main user journeys and failure paths.
+补充主路径和失败路径。
 
 ## 6. Functional Requirements
 
@@ -57,8 +56,6 @@ Add the main user journeys and failure paths.
 - [ ] 
 - [ ] 
 
-Each criterion should be specific enough to test.
-
 ## 9. Open Questions
 
 - 
@@ -70,4 +67,4 @@ Each criterion should be specific enough to test.
 
 ## 11. Notes
 
-Capture references, sketches, or linked decisions here.
+补充引用、草图或其他说明。

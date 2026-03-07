@@ -4,16 +4,17 @@ SHELL := /bin/bash
 
 help:
 	@echo "Available targets:"
-	@echo "  make new-feature SLUG=<feature-slug>"
+	@echo "  make new-feature SLUG=<feature-slug> LANG=<cn|en>"
 	@echo "  make check-tree"
 	@echo "  make validate-specs"
 
 new-feature:
 	@if [[ -z "$(SLUG)" ]]; then \
-		echo "Usage: make new-feature SLUG=<feature-slug>"; \
+		echo "Usage: make new-feature SLUG=<feature-slug> LANG=<cn|en>"; \
 		exit 1; \
 	fi
-	@bash scripts/new-feature.sh "$(SLUG)"
+	@FEATURE_LANG="$(if $(filter command line,$(origin LANG)),$(LANG),cn)"; \
+	FEATURE_LANG="$$FEATURE_LANG" bash scripts/new-feature.sh "$(SLUG)"
 
 check-tree:
 	@find . -maxdepth 3 -type f | sort

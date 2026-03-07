@@ -34,15 +34,10 @@ if [[ ! -d "$feature_root" ]]; then
   log_error "Missing feature root directory: $feature_root"
 fi
 
-shopt -s nullglob
-feature_dirs=("$feature_root"/*)
-shopt -u nullglob
-
 real_feature_dirs=()
-for dir in "${feature_dirs[@]}"; do
-  [[ -d "$dir" ]] || continue
+while IFS= read -r dir; do
   real_feature_dirs+=("$dir")
-done
+done < <(find "$feature_root" -mindepth 1 -maxdepth 1 -type d | sort)
 
 if [[ ${#real_feature_dirs[@]} -eq 0 ]]; then
   echo "No feature directories found under $feature_root. Structural check passed."

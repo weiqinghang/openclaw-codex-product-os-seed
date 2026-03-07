@@ -8,7 +8,7 @@
 
 ## 1. Intended Outcome
 
-What outcome was this iteration trying to produce?
+本次迭代想达成什么结果？
 
 ## 2. What Shipped
 
@@ -34,6 +34,6 @@ What outcome was this iteration trying to produce?
 
 ## 7. Process Updates
 
-What should change in the constitution, templates, or working agreement?
+哪些规则、模板或流程应该调整？
 
 - 

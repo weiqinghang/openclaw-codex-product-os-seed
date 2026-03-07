@@ -2,7 +2,7 @@
 
 ## Metadata
 
-- Request title:
+- Title:
 - Requested by:
 - Date:
 - Priority:
@@ -12,7 +12,7 @@
 
 Describe the request in plain language.
 
-## 2. User and Scenario
+## 2. User and Context
 
 - Primary user:
 - Triggering scenario:
@@ -20,7 +20,7 @@ Describe the request in plain language.
 
 ## 3. Desired Outcome
 
-What business or user result should change if this is successful?
+State what should be true after delivery.
 
 ## 4. Constraints
 
@@ -37,7 +37,7 @@ What business or user result should change if this is successful?
 
 ## 6. Initial Slice Proposal
 
-What is the smallest valuable version worth specifying now?
+Describe the smallest valuable slice worth specifying now.
 
 ## 7. Open Questions
 
