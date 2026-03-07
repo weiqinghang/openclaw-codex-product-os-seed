@@ -107,6 +107,7 @@ sequenceDiagram
 - 全套规格与交付模板
 - 新功能脚手架脚本
 - GitHub Actions spec 工件校验
+- GitHub issue / PR 模板
 - 可直接作为 GitHub 仓库发布的基础结构
 
 暂时还没有：
@@ -189,7 +190,6 @@ make validate-specs
 
 ## 后续推荐增强
 
-- 增加 issue / PR 模板
 - 增加 release note 自动生成
 - 增加 seed 升级同步策略
 

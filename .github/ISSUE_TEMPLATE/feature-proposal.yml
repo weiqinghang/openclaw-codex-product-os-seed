@@ -1,0 +1,73 @@
+name: Feature Proposal
+description: Propose a new feature or improvement using the seed repo's spec-driven intake format.
+title: "[Feature] "
+labels:
+  - feature
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this template when the issue is a candidate for `brief -> spec -> plan -> tasks`.
+  - type: input
+    id: summary
+    attributes:
+      label: Request Summary
+      description: Describe the request in one or two sentences.
+      placeholder: Example: Add a lightweight release checklist for downstream projects.
+    validations:
+      required: true
+  - type: textarea
+    id: user_context
+    attributes:
+      label: User and Context
+      description: Who is affected and in what scenario does this request appear?
+      placeholder: |
+        Primary user:
+        Triggering scenario:
+        Current workaround or failure:
+    validations:
+      required: true
+  - type: textarea
+    id: desired_outcome
+    attributes:
+      label: Desired Outcome
+      description: What should be true after this feature is delivered?
+      placeholder: Describe the behavior, impact, or workflow improvement.
+    validations:
+      required: true
+  - type: textarea
+    id: constraints
+    attributes:
+      label: Constraints
+      description: List time, technical, compliance, or dependency constraints.
+      placeholder: |
+        Time:
+        Technical:
+        Compliance/security:
+        Dependencies:
+    validations:
+      required: false
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence
+      description: Include supporting user feedback, data, or stakeholder input.
+      placeholder: Summarize the signal behind this request.
+    validations:
+      required: false
+  - type: textarea
+    id: initial_slice
+    attributes:
+      label: Initial Slice Proposal
+      description: What is the smallest valuable version worth specifying now?
+      placeholder: Describe the smallest credible delivery slice.
+    validations:
+      required: true
+  - type: textarea
+    id: open_questions
+    attributes:
+      label: Open Questions
+      description: Capture unknowns that should be resolved during spec or planning.
+      placeholder: List unresolved questions.
+    validations:
+      required: false

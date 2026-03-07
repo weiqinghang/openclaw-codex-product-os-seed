@@ -1,0 +1,74 @@
+name: Bug Report
+description: Report a defect or regression in a way that can flow into brief/spec/plan/tasks if needed.
+title: "[Bug] "
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this template for defects, regressions, or workflow breakages.
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: What is failing, and why does it matter?
+      placeholder: Describe the bug and its impact.
+    validations:
+      required: true
+  - type: textarea
+    id: affected_users
+    attributes:
+      label: Affected Users and Context
+      description: Who is impacted and under what conditions?
+      placeholder: |
+        Affected user:
+        Triggering workflow:
+        Environment:
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Reproduction Steps
+      description: List the minimal sequence needed to reproduce the problem.
+      placeholder: |
+        1.
+        2.
+        3.
+    validations:
+      required: true
+  - type: textarea
+    id: expected_actual
+    attributes:
+      label: Expected vs Actual
+      description: State the expected behavior and what actually happened.
+      placeholder: |
+        Expected:
+        Actual:
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence
+      description: Link logs, screenshots, failing checks, or other proof.
+      placeholder: Provide supporting evidence.
+    validations:
+      required: false
+  - type: textarea
+    id: risk
+    attributes:
+      label: Risk and Scope
+      description: What is the user, product, or operational risk if this remains unfixed?
+      placeholder: Describe severity and blast radius.
+    validations:
+      required: true
+  - type: textarea
+    id: suspected_slice
+    attributes:
+      label: Suspected Fix Slice
+      description: If known, describe the smallest likely fix or containment step.
+      placeholder: Describe the smallest plausible fix.
+    validations:
+      required: false
