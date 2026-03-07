@@ -106,11 +106,11 @@ sequenceDiagram
 - 项目原则治理
 - 全套规格与交付模板
 - 新功能脚手架脚本
+- GitHub Actions spec 工件校验
 - 可直接作为 GitHub 仓库发布的基础结构
 
 暂时还没有：
 
-- GitHub Actions 自动检查规格完整性
 - OpenClaw 的专用命令封装
 - seed 仓库对下游项目的自动同步机制
 
@@ -145,6 +145,20 @@ make new-feature SLUG=improve-onboarding
 4. 再拆 `tasks.md`
 5. 再让 Codex 进入实现与验证
 
+### 4. 本地先跑一次 spec 校验
+
+```bash
+make validate-specs
+```
+
+这个校验和 GitHub Actions 使用同一套规则，当前会检查：
+
+- `specs/features/<slug>/` 是否存在 `brief.md`
+- `specs/features/<slug>/` 是否存在 `spec.md`
+- `specs/features/<slug>/` 是否存在 `plan.md`
+- `specs/features/<slug>/` 是否存在 `tasks.md`
+- 上述文件中是否包含关键章节标题
+
 ## 默认工作约定
 
 - 用户可见行为变化，必须先更新 spec
@@ -175,7 +189,6 @@ make new-feature SLUG=improve-onboarding
 
 ## 后续推荐增强
 
-- 增加 GitHub Actions 校验 spec 工件
 - 增加 issue / PR 模板
 - 增加 release note 自动生成
 - 增加 seed 升级同步策略
