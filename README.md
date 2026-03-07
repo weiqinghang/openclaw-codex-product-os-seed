@@ -52,10 +52,14 @@ flowchart LR
 ├── docs/
 │   ├── language-policy.cn.md
 │   ├── language-policy.en.md
+│   ├── execution-playbook.cn.md
+│   ├── execution-playbook.en.md
 │   ├── product-rd-operating-system.cn.md
 │   ├── product-rd-operating-system.en.md
 │   ├── seed-project-guide.cn.md
 │   └── seed-project-guide.en.md
+├── examples/
+│   └── onboarding-improvement/
 ├── scripts/
 ├── specs/
 │   ├── constitution.cn.md
@@ -113,13 +117,16 @@ make validate-specs
 ## 文档入口
 
 - 操作系统总纲：[docs/product-rd-operating-system.cn.md](docs/product-rd-operating-system.cn.md)
+- 执行手册：[docs/execution-playbook.cn.md](docs/execution-playbook.cn.md)
 - 种子项目用法：[docs/seed-project-guide.cn.md](docs/seed-project-guide.cn.md)
 - 语言策略：[docs/language-policy.cn.md](docs/language-policy.cn.md)
 - 项目原则：[specs/constitution.cn.md](specs/constitution.cn.md)
+- 端到端示例：[examples/onboarding-improvement/brief.md](examples/onboarding-improvement/brief.md)
 
 英文入口：
 
 - [README.en.md](README.en.md)
+- [docs/execution-playbook.en.md](docs/execution-playbook.en.md)
 - [docs/product-rd-operating-system.en.md](docs/product-rd-operating-system.en.md)
 - [docs/seed-project-guide.en.md](docs/seed-project-guide.en.md)
 - [docs/language-policy.en.md](docs/language-policy.en.md)

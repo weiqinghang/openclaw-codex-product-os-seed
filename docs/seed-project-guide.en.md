@@ -25,6 +25,8 @@ This repository is suitable as a Git seed project for teams that want every new 
 - standard artifact flow from intake to retrospective
 - feature workspace scaffolding
 - GitHub Actions structural validation
+- a concrete execution playbook
+- worked end-to-end example artifacts
 
 ## Not automated yet
 

@@ -62,10 +62,12 @@ make validate-specs
 
 ## Entry Points
 
+- [docs/execution-playbook.en.md](docs/execution-playbook.en.md)
 - [docs/product-rd-operating-system.en.md](docs/product-rd-operating-system.en.md)
 - [docs/seed-project-guide.en.md](docs/seed-project-guide.en.md)
 - [docs/language-policy.en.md](docs/language-policy.en.md)
 - [specs/constitution.en.md](specs/constitution.en.md)
+- [examples/onboarding-improvement/brief.md](examples/onboarding-improvement/brief.md)
 
 ## License
 

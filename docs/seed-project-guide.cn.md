@@ -27,6 +27,8 @@
 - 从 intake 到 retrospective 的标准工件流
 - 新 feature 工作区脚手架
 - GitHub Actions 的工件结构校验
+- 更具体的执行手册
+- 端到端示例工件
 
 ## Not automated yet
 
