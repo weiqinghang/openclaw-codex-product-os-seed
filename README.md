@@ -23,7 +23,127 @@
 - `OpenSpec`：适合已有产品的持续变更管理
 - `Superpowers`：强化 brainstorm、plan、execute、verify 的执行纪律
 
-## 协作流程
+## 系统边界
+
+- 飞书：人类与 `OpenClaw` 的主协作界面
+- GitHub：正式项目入口和正式工件入口
+- Figma：设计定版来源
+- 仓库中的 `brief / spec / plan / tasks`：切片级执行载体
+
+## 这套 spec 主要给谁用
+
+这套工件不是只给产品或只给工程写的，而是给同一条交付链路上的三类参与者共同使用：
+
+- 人：负责取舍、优先级、风险和发布决策
+- `OpenClaw`：负责接收原始请求、收敛问题、组织协作入口
+- `Codex`：负责读取当前切片工件、执行实现、验证结果并产出证据
+
+因此，这套 `brief / spec / plan / tasks` 的目标不是“写文档归档”，而是让不同角色围绕同一个当前切片协作。
+
+这些规格文件也是三方协作的结果：
+
+- 人负责决定当前切片边界、验收标准、风险取舍和是否进入下一步
+- `OpenClaw` 负责把原始请求收敛成可进入仓库流程的问题，并推动补齐当前需要的工件
+- `Codex` 负责把这些决策和边界落实到 `brief / spec / plan / tasks` 中，并在实现过程中持续更新
+
+因此，规格文件通常由 `Codex` 落地写入，但规格内容的最终责任仍然在人的决策。
+
+## 我们遵循的思想
+
+- 敏捷：优先交付小而真实的价值，而不是追求一次性完整定义
+- XP：小步快跑、快速反馈、测试优先、持续重构
+- SDD：先澄清为什么做、做什么、怎么验证，再进入实现
+- 面向 `Codex` 的最小上下文：只提供当前切片所需信息，降低理解和执行成本
+- 最后责任时刻：高成本决定尽量延后到必须决定的时候
+
+## 它和瀑布开发有什么区别
+
+瀑布式开发倾向于先完整分析、完整设计、完整拆解，再统一开发和验收。
+
+这套方法强调的是：
+
+- 只定义当前切片，不一次覆盖整个主题
+- 每个切片都要独立验收，不等“大版本完成”
+- 设计只服务当前切片，不为未来切片预支复杂度
+- 理解变化时先更新工件，再继续实现
+
+## 多角色协作流程
+
+```mermaid
+flowchart LR
+    subgraph Human["人"]
+        H1["发现值得推进的切片"]
+        H2["决定优先级与当前边界"]
+        H3{"达到当前验收了吗？"}
+        H4["决定发布 / 复盘 / 进入下一切片"]
+    end
+
+    subgraph OpenClaw["OpenClaw"]
+        O1["接收原始请求"]
+        O2["收敛问题\n整理当前最小上下文"]
+        O3["推动补充或更新工件"]
+    end
+
+    subgraph Specs["规格工件"]
+        S1["brief\nCodex 落地写入\n人确认边界"]
+        S2["spec\nCodex 落地写入\n人确认范围与验收"]
+        S3["plan\nCodex 落地写入\n人确认设计取舍与风险"]
+        S4["tasks\nCodex 落地写入\n按当前批次展开"]
+    end
+
+    subgraph Codex["Codex"]
+        C1["读取并更新当前切片工件"]
+        C2["实现 + 测试 + 验证"]
+        C3["返回结果与证据"]
+    end
+
+    H1 --> O1 --> O2 --> H2
+    H2 --> S1 --> S2 --> S3 --> S4
+    O2 --> C1
+    S4 --> C1 --> C2 --> C3 --> H3
+    H3 -- "没有" --> O3 --> S3
+    H3 -- "达到了" --> H4
+```
+
+## 项目启动流程
+
+```mermaid
+flowchart LR
+    subgraph Human["人类"]
+        H1["在飞书提出项目想法"]
+        H2["review 项目方向、范围与首个切片"]
+        H3["确认项目级 issue"]
+        H4["确认首个切片"]
+    end
+
+    subgraph OpenClaw["OpenClaw"]
+        O1["在飞书中收敛目标、场景与版本规划"]
+        O2["产出原型草案、交互说明\n需要时给出 Figma 提案"]
+        O3["创建 GitHub 项目级 issue"]
+        O4["基于项目级 issue 提议首个切片"]
+    end
+
+    subgraph Systems["正式载体"]
+        G1["GitHub 项目级 issue"]
+        F1["Figma 设计定版"]
+        R1["仓库中的 brief / spec / plan / tasks"]
+    end
+
+    subgraph Codex["Codex"]
+        C1["在切片确认后落仓写工件"]
+        C2["推进实现、验证与回写"]
+    end
+
+    H1 --> O1 --> O2 --> H2
+    O2 --> F1
+    H2 --> O3 --> G1 --> H3
+    H3 --> O4 --> H4
+    H4 --> C1 --> R1 --> C2
+    G1 --> C1
+    F1 --> C1
+```
+
+## 切片主循环
 
 ```mermaid
 flowchart LR
@@ -46,8 +166,10 @@ flowchart LR
 ├── docs/
 │   ├── language-policy.md
 │   ├── execution-playbook.md
+│   ├── project-startup-playbook.md
 │   ├── product-rd-operating-system.md
-│   └── seed-project-guide.md
+│   ├── seed-project-guide.md
+│   └── slice-quality-checklist.md
 ├── examples/
 │   └── onboarding-improvement/
 ├── scripts/
@@ -100,6 +222,8 @@ make validate-specs
 
 - 操作系统总纲：[docs/product-rd-operating-system.md](docs/product-rd-operating-system.md)
 - 执行手册：[docs/execution-playbook.md](docs/execution-playbook.md)
+- 项目启动手册：[docs/project-startup-playbook.md](docs/project-startup-playbook.md)
+- 切片质量检查清单：[docs/slice-quality-checklist.md](docs/slice-quality-checklist.md)
 - 种子项目用法：[docs/seed-project-guide.md](docs/seed-project-guide.md)
 - 语言策略：[docs/language-policy.md](docs/language-policy.md)
 - 术语表：[docs/glossary.md](docs/glossary.md)

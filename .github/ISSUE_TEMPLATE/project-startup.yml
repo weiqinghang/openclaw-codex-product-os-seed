@@ -1,0 +1,87 @@
+name: 项目启动
+description: 用于在项目方向确认后建立正式的项目级 issue。
+title: "[项目] "
+labels:
+  - project
+body:
+  - type: markdown
+    attributes:
+      value: |
+        当人类已在飞书中与 `OpenClaw` 完成项目级收敛后，请使用此模板建立正式项目入口。
+  - type: input
+    id: summary
+    attributes:
+      label: 项目概述
+      description: 用一两句话说明这个项目要解决什么问题。
+      placeholder: 例如：为新产品建立首版 onboarding 流程并验证激活率改善。
+    validations:
+      required: true
+  - type: textarea
+    id: goals
+    attributes:
+      label: 项目目标与成功标准
+      description: 说明这个项目为什么值得启动，以及希望达到什么结果。
+      placeholder: |
+        项目目标：
+        成功标准：
+    validations:
+      required: true
+  - type: textarea
+    id: users_and_scenarios
+    attributes:
+      label: 目标用户与核心场景
+      description: 说明谁会使用它，以及它主要服务哪个流程。
+      placeholder: |
+        目标用户：
+        核心场景：
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: 首版范围与明确不做
+      description: 用于收敛首版边界，避免项目启动时直接膨胀。
+      placeholder: |
+        首版范围：
+        明确不做：
+    validations:
+      required: true
+  - type: textarea
+    id: risks
+    attributes:
+      label: 关键风险、依赖与待确认问题
+      description: 记录当前项目启动阶段已经识别出的关键不确定项。
+      placeholder: |
+        风险：
+        依赖：
+        待确认问题：
+    validations:
+      required: true
+  - type: textarea
+    id: release_outline
+    attributes:
+      label: 版本规划摘要
+      description: 概述首版和后续阶段的推进节奏，不需要展开到切片级细节。
+      placeholder: |
+        首版目标：
+        后续阶段：
+    validations:
+      required: true
+  - type: textarea
+    id: design_links
+    attributes:
+      label: 飞书文档与 Figma 链接
+      description: 补充项目级讨论和设计定版来源。
+      placeholder: |
+        飞书：
+        Figma：
+    validations:
+      required: true
+  - type: textarea
+    id: initial_slice
+    attributes:
+      label: 首个切片候选
+      description: 记录当前最值得先落地的最小交付切片候选，供后续确认。
+      placeholder: 描述首个切片建议及其独立价值。
+    validations:
+      required: true
