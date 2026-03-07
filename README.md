@@ -99,6 +99,7 @@ make validate-specs
 - 执行手册：[docs/execution-playbook.md](docs/execution-playbook.md)
 - 种子项目用法：[docs/seed-project-guide.md](docs/seed-project-guide.md)
 - 语言策略：[docs/language-policy.md](docs/language-policy.md)
+- 术语表：[docs/glossary.md](docs/glossary.md)
 - 项目原则：[specs/constitution.md](specs/constitution.md)
 - 端到端示例：[examples/onboarding-improvement/brief.md](examples/onboarding-improvement/brief.md)
 
