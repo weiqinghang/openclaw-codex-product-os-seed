@@ -11,6 +11,8 @@
 但在进入切片节奏之前，项目需要先完成一次项目级启动。
 
 项目级启动规则见：[项目启动手册](./project-startup-playbook.md)
+`OpenClaw` 与 `Codex` 的角色映射和交互规则见：[OpenClaw / Codex 操作模型](./openclaw-codex-operating-model.md)
+关键审批节点见：[审批网关模型](./approval-gateway-model.md)
 
 一个切片的默认节奏是：
 
@@ -110,6 +112,8 @@
 - 一个对话优先只解决一个切片
 - 一个实现回合优先只完成一批任务
 - 如果中途发现理解变了，先更新工件，再继续实现
+- `OpenClaw` 应只向 `Codex` 下发边界清楚的任务包，而不是整包历史对话
+- 需要人类拍板时，`OpenClaw` 应整理决策摘要，而不是转发原始执行细节
 
 ## 执行步骤
 

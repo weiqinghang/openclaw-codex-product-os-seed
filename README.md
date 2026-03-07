@@ -30,6 +30,13 @@
 - Figma：设计定版来源
 - 仓库中的 `brief / spec / plan / tasks`：切片级执行载体
 
+## 运行形态
+
+- 人类：主要与 `OpenClaw` 交互
+- `OpenClaw`：固定扮演前台编排者，负责收敛、分派、回传和审批网关控制
+- `Codex`：固定扮演后台执行者，负责技术分析、规格落仓、实现、测试、验证和证据整理
+- 设计师、架构师、QA、产品、工程等岗位：先抽象成职责簇，由这三固定角色承担
+
 ## 这套 spec 主要给谁用
 
 这套工件不是只给产品或只给工程写的，而是给同一条交付链路上的三类参与者共同使用：
@@ -166,6 +173,8 @@ flowchart LR
 ├── docs/
 │   ├── language-policy.md
 │   ├── execution-playbook.md
+│   ├── approval-gateway-model.md
+│   ├── openclaw-codex-operating-model.md
 │   ├── project-startup-playbook.md
 │   ├── product-rd-operating-system.md
 │   ├── seed-project-guide.md
@@ -222,6 +231,8 @@ make validate-specs
 
 - 操作系统总纲：[docs/product-rd-operating-system.md](docs/product-rd-operating-system.md)
 - 执行手册：[docs/execution-playbook.md](docs/execution-playbook.md)
+- 审批网关模型：[docs/approval-gateway-model.md](docs/approval-gateway-model.md)
+- OpenClaw / Codex 操作模型：[docs/openclaw-codex-operating-model.md](docs/openclaw-codex-operating-model.md)
 - 项目启动手册：[docs/project-startup-playbook.md](docs/project-startup-playbook.md)
 - 切片质量检查清单：[docs/slice-quality-checklist.md](docs/slice-quality-checklist.md)
 - 种子项目用法：[docs/seed-project-guide.md](docs/seed-project-guide.md)

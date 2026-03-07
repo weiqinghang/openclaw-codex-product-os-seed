@@ -11,6 +11,7 @@ Contributions should improve the seed in ways that are reusable across multiple 
 - Small bootstrap scripts
 - CI checks that enforce process quality
 - Documentation that reduces ambiguity for humans and agents
+- Reusable coordination assets for OpenClaw and Codex
 
 ## Avoid
 

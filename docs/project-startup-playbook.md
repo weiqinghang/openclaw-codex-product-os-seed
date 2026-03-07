@@ -26,6 +26,13 @@
 - Figma：设计定版来源
 - 仓库中的 `brief / spec / plan / tasks`：切片级执行载体
 
+交互方式固定如下：
+
+- 人类主要和 `OpenClaw` 交互
+- `OpenClaw` 负责协调和分派 `Codex`
+- `Codex` 的结果先回到 `OpenClaw`
+- 只有需要 review 或决策时，`OpenClaw` 才把结果提交给人类
+
 ## 项目启动流程
 
 ### 第 1 阶段：飞书中收敛项目方向
