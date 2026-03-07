@@ -176,6 +176,8 @@ flowchart LR
 │   ├── language-policy.md
 │   ├── execution-playbook.md
 │   ├── approval-gateway-model.md
+│   ├── codex-backlog.md
+│   ├── codex-capability-baseline.md
 │   ├── openclaw-backlog.md
 │   ├── openclaw-codex-operating-model.md
 │   ├── project-startup-playbook.md
@@ -235,6 +237,9 @@ make validate-specs
 - 操作系统总纲：[docs/product-rd-operating-system.md](docs/product-rd-operating-system.md)
 - 执行手册：[docs/execution-playbook.md](docs/execution-playbook.md)
 - 审批网关模型：[docs/approval-gateway-model.md](docs/approval-gateway-model.md)
+- Codex 能力基线：[docs/codex-capability-baseline.md](docs/codex-capability-baseline.md)
+- Codex 能力 Backlog：[docs/codex-backlog.md](docs/codex-backlog.md)
+- Codex Skill 发现与接入手册：[docs/codex-skill-sourcing-playbook.md](docs/codex-skill-sourcing-playbook.md)
 - OpenClaw 改造 Backlog：[docs/openclaw-backlog.md](docs/openclaw-backlog.md)
 - OpenClaw 能力包规范：[docs/openclaw-capability-pack-spec.md](docs/openclaw-capability-pack-spec.md)
 - OpenClaw / Codex 操作模型：[docs/openclaw-codex-operating-model.md](docs/openclaw-codex-operating-model.md)

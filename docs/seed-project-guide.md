@@ -27,6 +27,8 @@
 - 面向本地 OpenClaw 改造的任务包与审批网关模板
 - 面向本地 OpenClaw 长线演进的 backlog
 - 面向下游仓库复用的 OpenClaw 能力包规范
+- 面向 Codex 长线演进的能力基线与 backlog
+- 面向 Codex skills / MCP 发现与接入的标准流程
 - 从需求进入到复盘的标准工件流
 - 新功能工作区脚手架
 - GitHub Actions 的工件结构校验
