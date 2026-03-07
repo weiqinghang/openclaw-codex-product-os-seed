@@ -1,4 +1,4 @@
-name: Spec Artifact Validation
+name: 规格工件校验
 
 on:
   push:

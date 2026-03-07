@@ -1,73 +1,73 @@
-name: Feature Proposal
-description: Propose a new feature or improvement using the seed repo's spec-driven intake format.
-title: "[Feature] "
+name: 功能提案
+description: 用种子仓库的规格驱动方式提出新功能或改进需求。
+title: "[功能] "
 labels:
   - feature
 body:
   - type: markdown
     attributes:
       value: |
-        Use this template when the issue is a candidate for `brief -> spec -> plan -> tasks`.
+        当这个需求准备进入 `brief -> spec -> plan -> tasks` 流程时，请使用此模板。
   - type: input
     id: summary
     attributes:
-      label: Request Summary
-      description: Describe the request in one or two sentences.
-      placeholder: Example: Add a lightweight release checklist for downstream projects.
+      label: 请求概述
+      description: 用一两句话描述这个请求。
+      placeholder: 例如：为下游项目增加一份轻量发布检查清单。
     validations:
       required: true
   - type: textarea
     id: user_context
     attributes:
-      label: User and Context
-      description: Who is affected and in what scenario does this request appear?
+      label: 用户与场景
+      description: 谁会受到影响？这个请求出现在哪个场景？
       placeholder: |
-        Primary user:
-        Triggering scenario:
-        Current workaround or failure:
+        主要用户：
+        触发场景：
+        当前绕行方式或失败表现：
     validations:
       required: true
   - type: textarea
     id: desired_outcome
     attributes:
-      label: Desired Outcome
-      description: What should be true after this feature is delivered?
-      placeholder: Describe the behavior, impact, or workflow improvement.
+      label: 期望结果
+      description: 这个功能交付后，应该发生什么变化？
+      placeholder: 描述行为变化、业务影响或流程改进。
     validations:
       required: true
   - type: textarea
     id: constraints
     attributes:
-      label: Constraints
-      description: List time, technical, compliance, or dependency constraints.
+      label: 约束
+      description: 列出时间、技术、合规、安全或依赖约束。
       placeholder: |
-        Time:
-        Technical:
-        Compliance/security:
-        Dependencies:
+        时间：
+        技术：
+        合规或安全：
+        依赖：
     validations:
       required: false
   - type: textarea
     id: evidence
     attributes:
-      label: Evidence
-      description: Include supporting user feedback, data, or stakeholder input.
-      placeholder: Summarize the signal behind this request.
+      label: 证据
+      description: 补充用户反馈、数据证据或干系人输入。
+      placeholder: 概述这个请求背后的信号。
     validations:
       required: false
   - type: textarea
     id: initial_slice
     attributes:
-      label: Initial Slice Proposal
-      description: What is the smallest valuable version worth specifying now?
-      placeholder: Describe the smallest credible delivery slice.
+      label: 初始切片建议
+      description: 当前最值得先落地的最小有价值版本是什么？
+      placeholder: 描述最小可信交付切片。
     validations:
       required: true
   - type: textarea
     id: open_questions
     attributes:
-      label: Open Questions
-      description: Capture unknowns that should be resolved during spec or planning.
-      placeholder: List unresolved questions.
+      label: 待确认问题
+      description: 记录需要在规格或计划阶段解决的不确定项。
+      placeholder: 列出尚未解决的问题。
     validations:
       required: false

@@ -1,37 +1,37 @@
-name: Bug Report
-description: Report a defect or regression in a way that can flow into brief/spec/plan/tasks if needed.
-title: "[Bug] "
+name: 缺陷报告
+description: 用可进入规格流程的方式报告缺陷或回归问题。
+title: "[缺陷] "
 labels:
   - bug
 body:
   - type: markdown
     attributes:
       value: |
-        Use this template for defects, regressions, or workflow breakages.
+        当你要报告缺陷、回归问题或流程失效时，请使用此模板。
   - type: textarea
     id: problem
     attributes:
-      label: Problem
-      description: What is failing, and why does it matter?
-      placeholder: Describe the bug and its impact.
+      label: 问题描述
+      description: 哪里出了问题？为什么这件事重要？
+      placeholder: 描述缺陷现象及其影响。
     validations:
       required: true
   - type: textarea
     id: affected_users
     attributes:
-      label: Affected Users and Context
-      description: Who is impacted and under what conditions?
+      label: 受影响用户与场景
+      description: 谁受到影响？在什么条件下出现？
       placeholder: |
-        Affected user:
-        Triggering workflow:
-        Environment:
+        受影响用户：
+        触发流程：
+        环境：
     validations:
       required: true
   - type: textarea
     id: reproduction
     attributes:
-      label: Reproduction Steps
-      description: List the minimal sequence needed to reproduce the problem.
+      label: 复现步骤
+      description: 列出最小复现路径。
       placeholder: |
         1.
         2.
@@ -41,34 +41,34 @@ body:
   - type: textarea
     id: expected_actual
     attributes:
-      label: Expected vs Actual
-      description: State the expected behavior and what actually happened.
+      label: 预期与实际
+      description: 写出预期行为，以及实际发生了什么。
       placeholder: |
-        Expected:
-        Actual:
+        预期：
+        实际：
     validations:
       required: true
   - type: textarea
     id: evidence
     attributes:
-      label: Evidence
-      description: Link logs, screenshots, failing checks, or other proof.
-      placeholder: Provide supporting evidence.
+      label: 证据
+      description: 提供日志、截图、失败检查或其他证据。
+      placeholder: 补充相关证明材料。
     validations:
       required: false
   - type: textarea
     id: risk
     attributes:
-      label: Risk and Scope
-      description: What is the user, product, or operational risk if this remains unfixed?
-      placeholder: Describe severity and blast radius.
+      label: 风险与影响范围
+      description: 如果不修，这个问题会带来什么用户、产品或运行风险？
+      placeholder: 描述严重程度和影响范围。
     validations:
       required: true
   - type: textarea
     id: suspected_slice
     attributes:
-      label: Suspected Fix Slice
-      description: If known, describe the smallest likely fix or containment step.
-      placeholder: Describe the smallest plausible fix.
+      label: 初步修复切片
+      description: 如果已经有判断，请描述最小可能修复或止损动作。
+      placeholder: 描述最小可信修复切片。
     validations:
       required: false

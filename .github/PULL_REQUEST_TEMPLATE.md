@@ -1,50 +1,50 @@
-## Summary
+## 变更概述
 
-What changed, and why is this change needed?
+这次改了什么，为什么要改？
 
-## Lifecycle Links
+## 生命周期链接
 
-- Brief:
-- Spec:
-- Plan:
-- Tasks:
+- Brief：
+- Spec：
+- Plan：
+- Tasks：
 
-If one of these does not exist, explain why.
+如果其中某项不存在，请说明原因。
 
-## Change Type
+## 变更类型
 
-- [ ] New feature
-- [ ] Improvement
-- [ ] Bug fix
-- [ ] Refactor
-- [ ] Documentation
-- [ ] Workflow or tooling
+- [ ] 新功能
+- [ ] 改进
+- [ ] 缺陷修复
+- [ ] 重构
+- [ ] 文档
+- [ ] 流程或工具
 
-## What Was Implemented
+## 实际实现
 
 - 
 
-## Verification
+## 验证情况
 
-- Automated checks:
-- Manual verification:
-- Spec artifact validation:
+- 自动化检查：
+- 手动验证：
+- 规格工件校验：
 
-## Risks
+## 风险
 
-- Technical risk:
-- Product risk:
-- Operational risk:
+- 技术风险：
+- 产品风险：
+- 运行风险：
 
-## Release Notes
+## 发布说明
 
-- User-visible change:
-- Rollout notes:
-- Rollback notes:
+- 用户可见变化：
+- 发布说明：
+- 回滚说明：
 
-## Completion Checklist
+## 完成检查清单
 
-- [ ] User-visible behavior changes are reflected in spec artifacts
-- [ ] Relevant plan/tasks were updated or intentionally not needed
-- [ ] Tests and verification evidence are included
-- [ ] Known limitations are documented
+- [ ] 用户可见行为变化已经反映到规格工件中
+- [ ] 相关计划和任务已更新，或明确说明本次不需要
+- [ ] 测试和验证证据已包含
+- [ ] 已知限制已记录

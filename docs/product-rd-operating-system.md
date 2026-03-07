@@ -1,21 +1,21 @@
-# Product R&D Operating System
+# 产品研发操作系统
 
-## Goal
+## 目标
 
 构建一条完整的产品交付闭环，让想法从 OpenClaw 进入，转成可执行规格，经由 Codex 在仓库内完成实现，并在 XP 纪律下验证后发布。
 
-## Role Assignment
+## 角色分工
 
 ### OpenClaw
 
 - 收集原始产品意图
-- 把模糊请求整理成结构化 brief
+- 把模糊请求整理成结构化需求
 - 把需求路由进仓库形成有边界的变更请求
 
 ### Codex
 
 - 检查代码库和既有规格
-- 把 brief 转成 repo 级实现工作
+- 把需求转成仓库级实现工作
 - 修改代码、运行检查、产出可审查结果
 
 ### XP
@@ -31,20 +31,20 @@
 - 区分需求、设计、执行
 - 保留从产品问题到已交付行为的可追踪性
 
-## Lifecycle
+## 生命周期
 
-1. `Feature Brief`
-2. `Constitution Check`
-3. `Feature Spec`
-4. `Implementation Plan`
-5. `Task Breakdown`
-6. `Execution`
-7. `Review and Verification`
-8. `Release and Learn`
+1. 需求简报
+2. 原则检查
+3. 功能规格
+4. 实现计划
+5. 任务拆解
+6. 执行实现
+7. 评审与验证
+8. 发布与复盘
 
-## Working Agreement
+## 工作约定
 
-- 问题不清楚时先 brainstorm
-- 设计不清楚时先写 plan
-- 用户可见变更先更新 spec
-- 重复摩擦要回流到模板或 constitution
+- 问题不清楚时先澄清，不急着写代码
+- 设计不清楚时先写实现计划
+- 用户可见变更先更新规格
+- 重复摩擦要回流到模板或宪章

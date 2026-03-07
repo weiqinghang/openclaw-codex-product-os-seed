@@ -3,18 +3,17 @@ SHELL := /bin/bash
 .PHONY: help new-feature check-tree validate-specs
 
 help:
-	@echo "Available targets:"
-	@echo "  make new-feature SLUG=<feature-slug> LANG=<cn|en>"
+	@echo "可用目标："
+	@echo "  make new-feature SLUG=<feature-slug>"
 	@echo "  make check-tree"
 	@echo "  make validate-specs"
 
 new-feature:
 	@if [[ -z "$(SLUG)" ]]; then \
-		echo "Usage: make new-feature SLUG=<feature-slug> LANG=<cn|en>"; \
+		echo "用法：make new-feature SLUG=<feature-slug>"; \
 		exit 1; \
 	fi
-	@FEATURE_LANG="$(if $(filter command line,$(origin LANG)),$(LANG),cn)"; \
-	FEATURE_LANG="$$FEATURE_LANG" bash scripts/new-feature.sh "$(SLUG)"
+	@bash scripts/new-feature.sh "$(SLUG)"
 
 check-tree:
 	@find . -maxdepth 3 -type f | sort

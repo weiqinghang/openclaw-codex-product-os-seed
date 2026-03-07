@@ -1,17 +1,17 @@
-# Seed Project Guide
+# 种子项目使用指南
 
-## What this repository is
+## 仓库定位
 
 这个仓库适合作为 Git 种子项目，用于让新产品或新代码库从第一天开始就继承同一套研发操作系统。
 
-## Recommended downstream usage
+## 推荐用法
 
 1. 从这个 seed 创建新仓库
-2. 根据领域调整 `specs/constitution.cn.md` 和 `specs/constitution.en.md`
+2. 根据领域调整 `specs/constitution.md`
 3. 保留流程文档，按项目补充构建、测试、发布自动化
 4. 把跨项目通用的改进回流到这个 seed
 
-## Suggested repository conventions
+## 建议目录约定
 
 - `specs/features/<feature-slug>/brief.md`
 - `specs/features/<feature-slug>/spec.md`
@@ -19,18 +19,16 @@
 - `specs/features/<feature-slug>/tasks.md`
 - `specs/releases/<release-slug>.md`
 
-## Executable today
+## 当前已具备
 
-今天已经支持：
-
-- 统一 constitution
-- 从 intake 到 retrospective 的标准工件流
-- 新 feature 工作区脚手架
+- 统一宪章
+- 从需求进入到复盘的标准工件流
+- 新功能工作区脚手架
 - GitHub Actions 的工件结构校验
 - 更具体的执行手册
 - 端到端示例工件
 
-## Not automated yet
+## 当前未自动化
 
 - seed 到下游仓库的同步
 - OpenClaw 专用命令集成

@@ -1,33 +1,33 @@
-# Release Checklist
+# 发布检查清单
 
-## Metadata
+## 元数据
 
-- Feature: Empty dashboard onboarding card
-- Release owner: Engineering
-- Planned release date: 2026-03-14
+- 功能：空白 dashboard 引导卡片
+- 发布负责人：工程
+- 计划发布日期：2026-03-14
 
-## Readiness
+## 就绪性
 
-- [x] Spec reflects shipped behavior
-- [x] Implementation plan risks were addressed or accepted
-- [x] Tasks marked complete have verification evidence
-- [x] User-facing docs or release notes updated
+- [x] 规格反映了已交付行为
+- [x] 实现计划中的风险已处理或接受
+- [x] 已完成任务都有验证证据
+- [x] 用户文档或发布说明已更新
 
-## Quality
+## 质量
 
-- [x] Automated tests passed
-- [x] Manual verification completed where needed
-- [x] Known limitations documented
-- [x] Observability or logging is sufficient for first release
+- [x] 自动化测试已通过
+- [x] 必要的手动验证已完成
+- [x] 已知限制已记录
+- [x] 首版发布所需的日志或观测已具备
 
-## Operational Safety
+## 运行安全
 
-- [x] Rollout approach is defined
-- [x] Rollback path is defined
-- [x] Support or stakeholder communication is prepared
+- [x] 发布方式已定义
+- [x] 回滚方式已定义
+- [x] 支持或干系人沟通已准备
 
-## Decision
+## 决策
 
-- Release decision: Approved
-- Approved by: Product + Engineering
-- Residual risks: 文案仍需根据首周数据微调
+- 发布决定：批准
+- 批准人：产品 + 工程
+- 剩余风险：文案仍需根据首周数据微调
