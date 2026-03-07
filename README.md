@@ -170,9 +170,9 @@ make validate-specs
 
 ## 文档入口
 
-- 操作系统总纲：[docs/product-rd-operating-system.md](/Users/claw/Documents/wukong/seed-repository/docs/product-rd-operating-system.md)
-- 种子项目用法：[docs/seed-project-guide.md](/Users/claw/Documents/wukong/seed-repository/docs/seed-project-guide.md)
-- 项目原则：[specs/constitution.md](/Users/claw/Documents/wukong/seed-repository/specs/constitution.md)
+- 操作系统总纲：[docs/product-rd-operating-system.md](docs/product-rd-operating-system.md)
+- 种子项目用法：[docs/seed-project-guide.md](docs/seed-project-guide.md)
+- 项目原则：[specs/constitution.md](specs/constitution.md)
 
 ## 关于图片与图示
 
@@ -195,4 +195,4 @@ make validate-specs
 
 ## License
 
-本项目默认使用 MIT License，见 [LICENSE](/Users/claw/Documents/wukong/seed-repository/LICENSE)。
+本项目默认使用 MIT License，见 [LICENSE](LICENSE)。
