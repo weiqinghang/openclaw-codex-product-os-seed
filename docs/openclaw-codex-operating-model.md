@@ -335,6 +335,8 @@
 推荐先用这些文档和模板作为最小实现载体：
 
 - [审批网关模型](./approval-gateway-model.md)
+- [OpenClaw 改造 Backlog](./openclaw-backlog.md)
+- [OpenClaw 能力包规范](./openclaw-capability-pack-spec.md)
 - [Codex 任务包模板](../templates/codex-task-packet.md)
 - [人类决策摘要模板](../templates/human-decision-brief.md)
 

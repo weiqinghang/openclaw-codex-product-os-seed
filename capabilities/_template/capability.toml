@@ -1,0 +1,14 @@
+id = "oc-example-capability"
+name = "Example Capability"
+version = "0.1.0"
+category = "example"
+summary = "Describe what this capability enables."
+recommended_layer = "no-source"
+status = "draft"
+
+[compat]
+requires_openclaw_source_changes = false
+requires_codex_source_changes = false
+
+[ownership]
+backlog_id = "OC-000"

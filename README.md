@@ -170,10 +170,13 @@ flowchart LR
 ```text
 .
 ├── README.md
+├── capabilities/
+│   └── <capability-slug>/
 ├── docs/
 │   ├── language-policy.md
 │   ├── execution-playbook.md
 │   ├── approval-gateway-model.md
+│   ├── openclaw-backlog.md
 │   ├── openclaw-codex-operating-model.md
 │   ├── project-startup-playbook.md
 │   ├── product-rd-operating-system.md
@@ -232,6 +235,8 @@ make validate-specs
 - 操作系统总纲：[docs/product-rd-operating-system.md](docs/product-rd-operating-system.md)
 - 执行手册：[docs/execution-playbook.md](docs/execution-playbook.md)
 - 审批网关模型：[docs/approval-gateway-model.md](docs/approval-gateway-model.md)
+- OpenClaw 改造 Backlog：[docs/openclaw-backlog.md](docs/openclaw-backlog.md)
+- OpenClaw 能力包规范：[docs/openclaw-capability-pack-spec.md](docs/openclaw-capability-pack-spec.md)
 - OpenClaw / Codex 操作模型：[docs/openclaw-codex-operating-model.md](docs/openclaw-codex-operating-model.md)
 - 项目启动手册：[docs/project-startup-playbook.md](docs/project-startup-playbook.md)
 - 切片质量检查清单：[docs/slice-quality-checklist.md](docs/slice-quality-checklist.md)

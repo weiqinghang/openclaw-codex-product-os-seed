@@ -25,6 +25,8 @@
 - 项目启动到切片执行的分层方法
 - OpenClaw 前台编排与 Codex 后台执行的操作模型
 - 面向本地 OpenClaw 改造的任务包与审批网关模板
+- 面向本地 OpenClaw 长线演进的 backlog
+- 面向下游仓库复用的 OpenClaw 能力包规范
 - 从需求进入到复盘的标准工件流
 - 新功能工作区脚手架
 - GitHub Actions 的工件结构校验
