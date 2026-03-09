@@ -54,15 +54,14 @@
 
 ## 7. 待确认问题
 
-- 该 Agent 是否独占一个飞书应用 / 账号
-- 它是否允许自动提交和推送，还是默认只准备变更
-- 它是否只服务 seed 仓库，还是未来扩展到其他产品 OS 仓库
+- 飞书应用的 `app_id` 和 `app_secret` 由人类后续提供
+- 绑定 channel 的消息格式与回报频率仍需在接入轮次细化
 
 <a id="human-decisions-brief"></a>
 ## 人类决策点
 
 > 这些问题需要人类拍板后，后续接入方案才能稳定收敛。
 
-- [ ] 是否让该 Agent 独占一个飞书应用 / 账号
-- [ ] 是否允许该 Agent 自动提交和推送
-- [ ] 是否只服务 `openclaw-codex-product-os-seed`
+- [x] 该 Agent 独占一个飞书应用 / 账号
+- [x] 默认只准备变更，不自动提交和推送
+- [x] 目前只服务 `openclaw-codex-product-os-seed`

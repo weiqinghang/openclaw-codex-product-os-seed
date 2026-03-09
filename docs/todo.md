@@ -91,35 +91,35 @@
 
 ### 关联工件
 
-- [ ] Backlog 条目：[`docs/02-openclaw/backlog.md#backlog`](./02-openclaw/backlog.md#backlog)
-- [ ] 需求简报：[`specs/features/openclaw-seed-maintainer-agent/brief.md`](../specs/features/openclaw-seed-maintainer-agent/brief.md)
-- [ ] 功能规格：[`specs/features/openclaw-seed-maintainer-agent/spec.md`](../specs/features/openclaw-seed-maintainer-agent/spec.md)
-- [ ] 实现计划：[`specs/features/openclaw-seed-maintainer-agent/plan.md`](../specs/features/openclaw-seed-maintainer-agent/plan.md)
-- [ ] 任务拆解：[`specs/features/openclaw-seed-maintainer-agent/tasks.md`](../specs/features/openclaw-seed-maintainer-agent/tasks.md)
+- [x] Backlog 条目：[`docs/02-openclaw/backlog.md#backlog`](./02-openclaw/backlog.md#backlog)
+- [x] 需求简报：[`specs/features/openclaw-seed-maintainer-agent/brief.md`](../specs/features/openclaw-seed-maintainer-agent/brief.md)
+- [x] 功能规格：[`specs/features/openclaw-seed-maintainer-agent/spec.md`](../specs/features/openclaw-seed-maintainer-agent/spec.md)
+- [x] 实现计划：[`specs/features/openclaw-seed-maintainer-agent/plan.md`](../specs/features/openclaw-seed-maintainer-agent/plan.md)
+- [x] 任务拆解：[`specs/features/openclaw-seed-maintainer-agent/tasks.md`](../specs/features/openclaw-seed-maintainer-agent/tasks.md)
 
 ### 本轮目标
 
-- [ ] 理解目前 `OpenClaw` 的多 Agent 能力和现有接入方式
-- [ ] 定义一个能在飞书中直接调用的 seed 项目维护 Agent
-- [ ] 明确这个 Agent 与人类、`OpenClaw`、`Codex` 的分工边界
-- [ ] 定义它维护 `openclaw-codex-product-os-seed` 的输入、输出和升级条件
-- [ ] 为后续飞书应用配对和接入准备规格工件
+- [x] 理解目前 `OpenClaw` 的多 Agent 能力和现有接入方式
+- [x] 定义一个能在飞书中直接调用的 seed 项目维护 Agent
+- [x] 明确这个 Agent 与人类、`OpenClaw`、`Codex` 的分工边界
+- [x] 定义它维护 `openclaw-codex-product-os-seed` 的输入、输出和升级条件
+- [x] 为后续飞书应用配对和接入准备规格工件
 
 ### 本轮人类参与
 
 - [ ] 人类提供飞书应用并完成配对
-- [ ] 人类确认这个 Agent 的权限边界和默认职责
-- [ ] 人类确认何时允许它自动推进，何时必须回到人类
+- [x] 人类确认这个 Agent 的权限边界和默认职责
+- [x] 人类确认何时允许它自动推进，何时必须回到人类
 
 ### 待人类决策
 
-- [ ] 飞书入口形态：独占一个飞书应用 / 账号，还是复用既有主入口路由  
+- [x] 飞书入口形态：独占一个飞书应用 / 账号  
   工件：[`brief.md#human-decisions-brief`](../specs/features/openclaw-seed-maintainer-agent/brief.md#human-decisions-brief)、[`spec.md#human-decisions-spec`](../specs/features/openclaw-seed-maintainer-agent/spec.md#human-decisions-spec)
-- [ ] Agent 挂载方式：作为 `main` 的一个职责模式，还是单独 agent 入口  
+- [x] Agent 挂载方式：单独 agent 入口  
   工件：[`spec.md#human-decisions-spec`](../specs/features/openclaw-seed-maintainer-agent/spec.md#human-decisions-spec)
-- [ ] 自动推进边界：是否允许自动提交和 push，还是默认只准备变更  
+- [x] 自动推进边界：默认只准备变更，然后通过绑定的应用 channel 向人类汇报  
   工件：[`brief.md#human-decisions-brief`](../specs/features/openclaw-seed-maintainer-agent/brief.md#human-decisions-brief)、[`spec.md#human-decisions-spec`](../specs/features/openclaw-seed-maintainer-agent/spec.md#human-decisions-spec)
-- [ ] 服务范围：只服务 `openclaw-codex-product-os-seed`，还是未来扩展到其他产品 OS 仓库  
+- [x] 服务范围：目前只服务 `openclaw-codex-product-os-seed`  
   工件：[`brief.md#human-decisions-brief`](../specs/features/openclaw-seed-maintainer-agent/brief.md#human-decisions-brief)
-- [ ] 接入节奏：本轮是否只收敛仓库工件，待飞书配对完成后再改本机 `OpenClaw`  
+- [x] 接入节奏：本轮只收敛仓库工件，待飞书配对完成后再改本机 `OpenClaw`  
   工件：[`plan.md#human-decisions-plan`](../specs/features/openclaw-seed-maintainer-agent/plan.md#human-decisions-plan)
