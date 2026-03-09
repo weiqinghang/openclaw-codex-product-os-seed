@@ -20,6 +20,26 @@
 
 当前仓库已有主线文档、OpenClaw backlog、能力包规范和 docs 迭代清单，但没有专门维护本仓库的 Agent 定义。当前会触达的区域是 `docs/`、`specs/features/openclaw-seed-maintainer-agent/`，以及可能新增的能力说明文档。
 
+### OpenClaw 当前架构背景
+
+- 当前 `OpenClaw` 运行在多飞书 App -> 多 Agent 架构下
+- 每个飞书 `accountId` 会通过 `bindings` 路由到独立 `agentId`
+- 每个 Agent 拥有独立的人格资产、workspace、sessions、users、logs
+- 同一用户在不同 Agent 间只共享低敏稳定画像，不共享私有会话和工作文件
+- `~/.openclaw/openclaw.json` 是真实主配置，负责 agents、bindings、channels、hooks 和运行时路径
+- `~/.openclaw/secrets.local.json` 保存本地真实密钥，`openclaw.json` 通过 env / file secret provider 引用
+- `~/.openclaw/agents/<agent>/` 承载人格、人设、长期记忆和 agentDir 资产
+- `~/Documents/OpenClawData/agents/<agentId>/` 承载 workspace、sessions、users、logs 等运行态数据
+- 校验和 gateway 相关命令，原则上应通过 `~/.openclaw/scripts/with-openclaw-secrets.sh` 执行，避免 CLI 假告警
+
+### 对本次接入的直接约束
+
+- `龟丞相` 必须作为独立 Agent 接入，而不是复用 `main` 职责模式
+- `龟丞相` 必须绑定独立飞书 App，并通过独立 `accountId` 路由
+- `龟丞相` 的私有用户数据、会话和日志必须与其他 Agent 隔离
+- `龟丞相` 默认只准备变更，并通过绑定 channel 向人类汇报
+- 本轮只收敛仓库工件与接入方案；真实本机改造在飞书配对完成后继续推进
+
 ## 3. 方案设计
 
 ### 受影响组件
