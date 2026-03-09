@@ -11,7 +11,7 @@
 - 实际项目工件只保留单份标准文件名，例如 `brief.md`
 - 等规则稳定后，再统一翻译英文版本
 
-详细规则见：[docs/language-policy.md](docs/language-policy.md)
+详细规则见：[docs/04-governance/language-policy.md](docs/04-governance/language-policy.md)
 
 ## 方法总览
 
@@ -173,17 +173,11 @@ flowchart LR
 ├── capabilities/
 │   └── <capability-slug>/
 ├── docs/
-│   ├── language-policy.md
-│   ├── execution-playbook.md
-│   ├── approval-gateway-model.md
-│   ├── codex-backlog.md
-│   ├── codex-capability-baseline.md
-│   ├── openclaw-backlog.md
-│   ├── openclaw-codex-operating-model.md
-│   ├── project-startup-playbook.md
-│   ├── product-rd-operating-system.md
-│   ├── seed-project-guide.md
-│   └── slice-quality-checklist.md
+│   ├── 01-mainline/
+│   ├── 02-openclaw/
+│   ├── 03-codex/
+│   ├── 04-governance/
+│   └── 05-seed-usage/
 ├── examples/
 │   └── onboarding-improvement/
 ├── scripts/
@@ -234,20 +228,21 @@ make validate-specs
 
 ## 文档入口
 
-- 操作系统总纲：[docs/product-rd-operating-system.md](docs/product-rd-operating-system.md)
-- 执行手册：[docs/execution-playbook.md](docs/execution-playbook.md)
-- 审批网关模型：[docs/approval-gateway-model.md](docs/approval-gateway-model.md)
-- Codex 能力基线：[docs/codex-capability-baseline.md](docs/codex-capability-baseline.md)
-- Codex 能力 Backlog：[docs/codex-backlog.md](docs/codex-backlog.md)
-- Codex Skill 发现与接入手册：[docs/codex-skill-sourcing-playbook.md](docs/codex-skill-sourcing-playbook.md)
-- OpenClaw 改造 Backlog：[docs/openclaw-backlog.md](docs/openclaw-backlog.md)
-- OpenClaw 能力包规范：[docs/openclaw-capability-pack-spec.md](docs/openclaw-capability-pack-spec.md)
-- OpenClaw / Codex 操作模型：[docs/openclaw-codex-operating-model.md](docs/openclaw-codex-operating-model.md)
-- 项目启动手册：[docs/project-startup-playbook.md](docs/project-startup-playbook.md)
-- 切片质量检查清单：[docs/slice-quality-checklist.md](docs/slice-quality-checklist.md)
-- 种子项目用法：[docs/seed-project-guide.md](docs/seed-project-guide.md)
-- 语言策略：[docs/language-policy.md](docs/language-policy.md)
-- 术语表：[docs/glossary.md](docs/glossary.md)
+- 文档总入口：[docs/README.md](docs/README.md)
+- 主线总览：[docs/01-mainline/overview.md](docs/01-mainline/overview.md)
+- 项目启动：[docs/01-mainline/project-start.md](docs/01-mainline/project-start.md)
+- 切片执行：[docs/01-mainline/slice-execution.md](docs/01-mainline/slice-execution.md)
+- 角色模型：[docs/01-mainline/roles-and-operating-model.md](docs/01-mainline/roles-and-operating-model.md)
+- 审批与回流：[docs/01-mainline/approval-and-feedback.md](docs/01-mainline/approval-and-feedback.md)
+- OpenClaw Backlog：[docs/02-openclaw/backlog.md](docs/02-openclaw/backlog.md)
+- OpenClaw 能力包规范：[docs/02-openclaw/capability-pack-spec.md](docs/02-openclaw/capability-pack-spec.md)
+- Codex 能力基线：[docs/03-codex/capability-baseline.md](docs/03-codex/capability-baseline.md)
+- Codex Backlog：[docs/03-codex/backlog.md](docs/03-codex/backlog.md)
+- Codex Skill 手册：[docs/03-codex/skill-sourcing-playbook.md](docs/03-codex/skill-sourcing-playbook.md)
+- 切片质量检查清单：[docs/04-governance/slice-quality-checklist.md](docs/04-governance/slice-quality-checklist.md)
+- 语言策略：[docs/04-governance/language-policy.md](docs/04-governance/language-policy.md)
+- 术语表：[docs/04-governance/glossary.md](docs/04-governance/glossary.md)
+- 种子项目用法：[docs/05-seed-usage/seed-project-guide.md](docs/05-seed-usage/seed-project-guide.md)
 - 项目原则：[specs/constitution.md](specs/constitution.md)
 - 迭代式示例：[examples/onboarding-improvement/README.md](examples/onboarding-improvement/README.md)
 

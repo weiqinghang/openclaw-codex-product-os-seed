@@ -10,9 +10,9 @@
 
 但在进入切片节奏之前，项目需要先完成一次项目级启动。
 
-项目级启动规则见：[项目启动手册](./project-startup-playbook.md)
-`OpenClaw` 与 `Codex` 的角色映射和交互规则见：[OpenClaw / Codex 操作模型](./openclaw-codex-operating-model.md)
-关键审批节点见：[审批网关模型](./approval-gateway-model.md)
+项目级启动规则见：[项目启动手册](./project-start.md)
+`OpenClaw` 与 `Codex` 的角色映射和交互规则见：[OpenClaw / Codex 操作模型](./roles-and-operating-model.md)
+关键审批节点见：[审批网关模型](./approval-and-feedback.md)
 
 一个切片的默认节奏是：
 
@@ -31,7 +31,7 @@
 - 能在一次 review 中看懂
 - 可以在一轮实现后得到反馈
 
-更具体的检查项见：[切片质量检查清单](./slice-quality-checklist.md)
+更具体的检查项见：[切片质量检查清单](../04-governance/slice-quality-checklist.md)
 
 ### 什么情况下要拆切片
 

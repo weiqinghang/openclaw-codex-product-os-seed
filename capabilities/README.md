@@ -7,13 +7,13 @@
 ## 使用规则
 
 - 一个子目录代表一个能力包
-- 能力包必须遵守 [OpenClaw 能力包规范](../docs/openclaw-capability-pack-spec.md)
+- 能力包必须遵守 [OpenClaw 能力包规范](../docs/02-openclaw/capability-pack-spec.md)
 - 能力包默认优先通过配置、模板、prompt、脚本或外围适配层实现
 - 如果某个能力包需要源码改造，必须在 `capability.toml` 中明确标记
 
 ## 推荐流程
 
-1. 先在 [OpenClaw 改造 Backlog](../docs/openclaw-backlog.md) 中登记能力需求
+1. 先在 [OpenClaw 改造 Backlog](../docs/02-openclaw/backlog.md) 中登记能力需求
 2. 再按本目录规范创建能力包
 3. 为能力包补齐：
    - `README.md`

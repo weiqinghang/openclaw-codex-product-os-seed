@@ -73,7 +73,7 @@
 - `OpenClaw` 负责“解释、翻译、分派、回传”
 - `Codex` 只接收边界清楚的执行任务
 
-更完整的职责映射和交互规则见：[OpenClaw / Codex 操作模型](./openclaw-codex-operating-model.md)
+更完整的职责映射和交互规则见：[OpenClaw / Codex 操作模型](./roles-and-operating-model.md)
 
 ## 规格文件由谁完成
 

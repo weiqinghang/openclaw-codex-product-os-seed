@@ -233,10 +233,10 @@
 
 具体长期补齐、安装、产品化和升级维护，应记录在：
 
-- `docs/codex-backlog.md`
+- `docs/03-codex/backlog.md`
 
 发现来源和接入流程应记录在：
 
-- `docs/codex-skill-sourcing-playbook.md`
+- `docs/03-codex/skill-sourcing-playbook.md`
 
 如果后续也要把 `Codex` 能力做成可复制能力资产，可以继续演进成与 `OpenClaw` 类似的 capability pack 体系。

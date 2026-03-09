@@ -88,4 +88,4 @@
 - 当新增一类 `Codex` 能力需求时，先在这里登记
 - 当某项能力已经稳定可用时，更新状态而不是删除
 - 如果后续把 `Codex` 能力产品化为复用资产，应补充对应位置和安装方式
-- 当前技能发现和筛选规则见：`docs/codex-skill-sourcing-playbook.md`
+- 当前技能发现和筛选规则见：`docs/03-codex/skill-sourcing-playbook.md`

@@ -132,7 +132,7 @@
 
 先把候选能力登记到：
 
-- `docs/codex-backlog.md`
+- `docs/03-codex/backlog.md`
 
 不要直接默认已经可用。
 
@@ -166,8 +166,8 @@
 
 验证通过后，更新：
 
-- `docs/codex-capability-baseline.md`
-- `docs/codex-backlog.md`
+- `docs/03-codex/capability-baseline.md`
+- `docs/03-codex/backlog.md`
 
 必要时再决定是否进一步产品化。
 

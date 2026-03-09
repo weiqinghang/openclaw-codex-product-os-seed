@@ -334,9 +334,9 @@
 
 推荐先用这些文档和模板作为最小实现载体：
 
-- [审批网关模型](./approval-gateway-model.md)
-- [OpenClaw 改造 Backlog](./openclaw-backlog.md)
-- [OpenClaw 能力包规范](./openclaw-capability-pack-spec.md)
+- [审批网关模型](./approval-and-feedback.md)
+- [OpenClaw 改造 Backlog](../02-openclaw/backlog.md)
+- [OpenClaw 能力包规范](../02-openclaw/capability-pack-spec.md)
 - [Codex 任务包模板](../templates/codex-task-packet.md)
 - [人类决策摘要模板](../templates/human-decision-brief.md)
 
@@ -365,7 +365,7 @@
 
 其余节点默认由 `OpenClaw` 和 `Codex` 自行流转。
 
-更具体的网关定义见：[审批网关模型](./approval-gateway-model.md)
+更具体的网关定义见：[审批网关模型](./approval-and-feedback.md)
 
 ## 验收场景
 

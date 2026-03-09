@@ -85,7 +85,7 @@ backlog_id = "OC-007"
 
 新增一个能力包时，至少要同时完成：
 
-- 在 `docs/openclaw-backlog.md` 中登记或关联 backlog 条目
+- 在 `docs/02-openclaw/backlog.md` 中登记或关联 backlog 条目
 - 创建 `capabilities/<capability-slug>/`
 - 补 `README.md`
 - 补 `capability.toml`
@@ -140,7 +140,7 @@ backlog_id = "OC-007"
 
 ## 与 Backlog 的关系
 
-`docs/openclaw-backlog.md` 记录的是长期能力需求。
+`docs/02-openclaw/backlog.md` 记录的是长期能力需求。
 
 `capabilities/` 记录的是已经被产品化的能力包。
 
