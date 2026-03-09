@@ -52,6 +52,7 @@
 | OC-020 | 原生状态持久化支持 | 如果外部状态存储无法可靠挂接，考虑增加内建状态持久化。 | 可能源码 | `oc-native-state-store` | todo |
 | OC-021 | 原生审批 UI | 如果飞书或外围层无法承载审批体验，再考虑在 `OpenClaw` 内建审批界面。 | 可能源码 | `oc-native-approval-ui` | todo |
 | OC-022 | 原生多代理调度内核 | 只有在外围编排明显失效时，才考虑把编排能力真正写进内核。 | 可能源码 | `oc-native-orchestrator` | todo |
+| OC-023 | 飞书项目维护 Agent | 让人类能在飞书中直接调用一个专门维护 `openclaw-codex-product-os-seed` 的 Agent，持续推进文档、能力包和流程改造。 | 扩展层 | `oc-seed-maintainer-agent` | in-progress |
 
 ## 当前优先级
 
