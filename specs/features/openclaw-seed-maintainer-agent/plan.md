@@ -45,7 +45,7 @@
 ### 受影响组件
 
 - `docs/02-openclaw/backlog.md`
-- `docs/todo.md`
+- `docs/current-iteration.md`
 - `specs/features/openclaw-seed-maintainer-agent/`
 
 ### 数据模型变更

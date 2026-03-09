@@ -4,7 +4,9 @@
 
 ## 目录导航
 
-- [todo.md](./todo.md)：围绕项目主线持续迭代的综合待办清单
+- [story-map.md](./story-map.md)：整体规划、已实现情况与当前聚焦
+- [current-iteration.md](./current-iteration.md)：当前迭代工作台
+- [todo-template.md](./todo-template.md)：综合待办模板
 - [todo-example-family-weekend-trip.md](./todo-example-family-weekend-trip.md)：综合待办模板的生活化示例
 - [01-mainline/index.md](./01-mainline/index.md)：人类 -> OpenClaw -> Codex 主线流程
 - [02-openclaw/index.md](./02-openclaw/index.md)：OpenClaw 的规则、backlog 与能力包规范
