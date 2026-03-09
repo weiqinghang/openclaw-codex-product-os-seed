@@ -8,9 +8,17 @@
 
 ## 任务列表
 
+| 任务 | 状态 | 目标 |
+| --- | --- | --- |
+| 任务 1 | `✅ done` | 理解现有 `OpenClaw` 多 Agent 能力与接入点 |
+| 任务 2 | `✅ done` | 定义 seed 项目维护 Agent 的职责边界、默认加载策略和线程工作流 |
+| 任务 3 | `📝 todo` | 把当前 feature 收敛为最小实施批次 |
+| 任务 4 | `📝 todo` | 准备 `龟丞相` 的本机接入改造 |
+| 任务 5 | `📝 todo` | 完成一次飞书线程端到端验证 |
+
 ### 任务 1
 
-- 状态：done
+- 状态：`✅ done`
 - 目标：理解现有 `OpenClaw` 多 Agent 能力与接入点
 - 输入：当前 `OpenClaw` 运行现状、已有 backlog 和主线文档
 - 不需要依赖：无
@@ -20,7 +28,7 @@
 
 ### 任务 2
 
-- 状态：done
+- 状态：`✅ done`
 - 目标：定义 seed 项目维护 Agent 的职责边界、默认加载策略和线程工作流
 - 输入：`docs/index.md`、`docs/00-story-map/index.md`、`docs/current-iteration.md`、`docs/01-mainline/`
 - 不需要依赖：本机运行时改造
@@ -30,7 +38,7 @@
 
 ### 任务 3
 
-- 状态：todo
+- 状态：`📝 todo`
 - 目标：把当前 feature 收敛为最小实施批次
 - 输入：`spec.md`、`plan.md`、`handbook.md`、`thread-workflow.md`
 - 需要依赖：真实飞书应用已配对
@@ -40,7 +48,7 @@
 
 ### 任务 4
 
-- 状态：todo
+- 状态：`📝 todo`
 - 目标：准备 `龟丞相` 的本机接入改造
 - 输入：真实 `OpenClaw` 配置、Agent 目录、workspace 路径
 - 需要依赖：人类接受本机配置改造
@@ -50,7 +58,7 @@
 
 ### 任务 5
 
-- 状态：todo
+- 状态：`📝 todo`
 - 目标：完成一次飞书线程端到端验证
 - 输入：已接入的 `龟丞相`
 - 需要依赖：人类在飞书中发起一次真实请求
