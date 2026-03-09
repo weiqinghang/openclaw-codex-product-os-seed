@@ -8,6 +8,8 @@
 - [x] 需求简报：[`specs/features/openclaw-seed-maintainer-agent/brief.md`](../specs/features/openclaw-seed-maintainer-agent/brief.md)
 - [x] 功能规格：[`specs/features/openclaw-seed-maintainer-agent/spec.md`](../specs/features/openclaw-seed-maintainer-agent/spec.md)
 - [x] 实现计划：[`specs/features/openclaw-seed-maintainer-agent/plan.md`](../specs/features/openclaw-seed-maintainer-agent/plan.md)
+- [x] 工作手册：[`specs/features/openclaw-seed-maintainer-agent/handbook.md`](../specs/features/openclaw-seed-maintainer-agent/handbook.md)
+- [x] 线程工作流：[`specs/features/openclaw-seed-maintainer-agent/thread-workflow.md`](../specs/features/openclaw-seed-maintainer-agent/thread-workflow.md)
 - [x] OpenClaw 架构背景：[`plan.md#2-当前状态`](../specs/features/openclaw-seed-maintainer-agent/plan.md#2-当前状态)
 - [x] 任务拆解：[`specs/features/openclaw-seed-maintainer-agent/tasks.md`](../specs/features/openclaw-seed-maintainer-agent/tasks.md)
 
@@ -17,13 +19,14 @@
 - [x] 定义一个能在飞书中直接调用的 seed 项目维护 Agent
 - [x] 明确这个 Agent 与人类、`OpenClaw`、`Codex` 的分工边界
 - [x] 定义它维护 `openclaw-codex-product-os-seed` 的输入、输出和升级条件
-- [x] 为后续飞书应用配对和接入准备规格工件
+- [x] 为 `龟丞相` 补齐工作手册与飞书线程工作流
+- [x] 为后续接入实现准备规格工件
 
 ## 待继续
 
-- [ ] 基于已完成配对的 `龟丞相`，设计真实接入步骤
+- [ ] 基于已完成配对的 `龟丞相`，拆出最小实施批次
 - [ ] 把本机 `OpenClaw` 多 Agent 架构约束映射到 `龟丞相` 接入实现
-- [ ] 定义飞书应用 channel 的回报格式、频率和状态模型
+- [ ] 固化飞书线程中的回报格式与状态模型
 - [ ] 验证 `龟丞相` 是否能稳定维护 `openclaw-codex-product-os-seed`
 
 ## 本轮人类参与
