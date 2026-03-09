@@ -228,7 +228,7 @@ make validate-specs
 
 ## 文档入口
 
-- 文档总入口：[docs/README.md](docs/README.md)
+- 文档总入口：[docs/index.md](docs/index.md)
 - 主线总览：[docs/01-mainline/overview.md](docs/01-mainline/overview.md)
 - 项目启动：[docs/01-mainline/project-start.md](docs/01-mainline/project-start.md)
 - 切片执行：[docs/01-mainline/slice-execution.md](docs/01-mainline/slice-execution.md)
