@@ -20,7 +20,7 @@
 ### 任务 2
 
 - 目标：定义 seed 项目维护 Agent 的职责边界与默认加载策略
-- 输入：`docs/index.md`、`docs/story-map.md`、`docs/current-iteration.md`、`docs/01-mainline/`
+- 输入：`docs/index.md`、`docs/00-story-map/index.md`、`docs/current-iteration.md`、`docs/01-mainline/`
 - 不需要依赖：真实本机接入
 - 变更：形成 Agent 规格与工作流
 - 验证：能回答“它服务谁、默认读什么、何时调用 Codex、何时回到人类”

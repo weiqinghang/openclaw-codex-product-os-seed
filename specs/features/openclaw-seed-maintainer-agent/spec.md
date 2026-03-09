@@ -76,7 +76,7 @@
 ## 6. 功能性要求
 
 - Agent 必须识别自己的唯一服务对象是 `openclaw-codex-product-os-seed`
-- Agent 必须以 `docs/index.md`、`docs/story-map.md` 和 `docs/current-iteration.md` 作为默认入口
+- Agent 必须以 `docs/index.md`、`docs/00-story-map/index.md` 和 `docs/current-iteration.md` 作为默认入口
 - Agent 必须按需加载，而不是整包注入全部 docs
 - Agent 必须能把请求至少分类为：主线规划、OpenClaw 能力建设、Codex 能力建设、治理更新、seed 用法更新
 - Agent 必须定义何时只由 `OpenClaw` 处理，何时转交 `Codex`

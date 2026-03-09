@@ -4,7 +4,7 @@
 
 ## 目录导航
 
-- [story-map.md](./story-map.md)：整体规划、已实现情况与当前聚焦
+- [00-story-map/index.md](./00-story-map/index.md)：整体规划、已实现情况、脑暴候选与当前聚焦
 - [current-iteration.md](./current-iteration.md)：当前迭代工作台
 - [todo-template.md](./todo-template.md)：综合待办模板
 - [todo-example-family-weekend-trip.md](./todo-example-family-weekend-trip.md)：综合待办模板的生活化示例
@@ -16,6 +16,14 @@
 
 ## 阅读顺序
 
-1. 先读 [01-mainline/index.md](./01-mainline/index.md)
-2. 再按需要读 `OpenClaw` 或 `Codex` 专题
-3. 最后查治理规则和 seed 用法
+1. 先读 [00-story-map/index.md](./00-story-map/index.md)，看整体规划和当前聚焦
+2. 再读 [current-iteration.md](./current-iteration.md)，看当前这一轮在做什么
+3. 需要执行方法时，读 [01-mainline/index.md](./01-mainline/index.md)
+4. 再按需要读 `OpenClaw` 或 `Codex` 专题
+5. 最后查治理规则和 seed 用法
+
+## 怎么用
+
+- 想看仓库整体怎么规划、哪些已实现、哪些还只是脑暴：看 `00-story-map/`
+- 想看当前这一轮具体做到哪一步：看 `current-iteration.md`
+- 想新开一轮：先参考 `todo-template.md`
