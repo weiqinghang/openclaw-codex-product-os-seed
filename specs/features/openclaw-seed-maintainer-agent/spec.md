@@ -23,7 +23,7 @@
 
 ## 1. 问题
 
-当前 seed 仓库已经形成主线文档、能力包和 backlog，但还没有一个专门的 `OpenClaw` 入口来持续维护它。人类若想继续推进仓库演进，仍需要手工解释上下文、临时决定加载哪些文档、以及临时组织对 `Codex` 的调用。
+当前 seed 仓库已经形成主线文档、能力包和 backlog，但还没有一个专门的 `OpenClaw` 入口来持续维护它。人类若想继续推进仓库演进，仍需要手工解释上下文、临时决定加载哪些文档、以及临时组织对 `Codex` 的 `ACP` 调用。
 
 ## 2. 用户与场景
 
@@ -44,7 +44,7 @@
 
 - 定义 seed 项目维护 Agent 的职责、边界和工作流
 - 定义其最小加载策略和默认输入输出
-- 定义其与人类、`OpenClaw`、`Codex` 的升级条件
+- 定义其与人类、`OpenClaw`、`ACP/Codex` 的升级条件
 - 为后续飞书配对接入准备工件
 
 ### 本次不做
@@ -64,7 +64,7 @@
 - 人类在飞书中请求继续维护 seed 仓库
 - `OpenClaw` 识别该请求属于 seed 项目维护
 - Agent 加载最少必要文档和当前迭代待办
-- Agent 产出下一步建议，必要时调用 `Codex`
+- Agent 产出下一步建议；凡涉及实现或专业能力，必须通过 `ACP` 调用 `Codex`
 - 结果回写到仓库工件，并在需要时回到人类确认
 
 失败路径：
@@ -79,7 +79,7 @@
 - Agent 必须以 `docs/index.md`、`docs/00-story-map/index.md` 和 `docs/current-iteration.md` 作为默认入口
 - Agent 必须按需加载，而不是整包注入全部 docs
 - Agent 必须能把请求至少分类为：主线规划、OpenClaw 能力建设、Codex 能力建设、治理更新、seed 用法更新
-- Agent 必须定义何时只由 `OpenClaw` 处理，何时转交 `Codex`
+- Agent 必须定义何时只由 `OpenClaw` 处理，何时必须通过 `ACP` 转交 `Codex`
 - Agent 必须定义何时需要人类确认
 - Agent 必须有独立工作手册和飞书线程工作流
 

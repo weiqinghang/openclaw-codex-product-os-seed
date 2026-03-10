@@ -33,7 +33,7 @@
 - 输入：`docs/index.md`、`docs/00-story-map/index.md`、`docs/current-iteration.md`、`docs/01-mainline/`
 - 不需要依赖：本机运行时改造
 - 变更：形成 Agent 规格、工作手册与线程工作流
-- 验证：能回答“它服务谁、默认读什么、何时调用 Codex、何时回到人类”
+- 验证：能回答“它服务谁、默认读什么、何时通过 `ACP` 调用 `Codex`、何时回到人类”
 - 完成定义：`spec.md`、`handbook.md`、`thread-workflow.md` 可直接指导接入实现
 
 ### 任务 3
